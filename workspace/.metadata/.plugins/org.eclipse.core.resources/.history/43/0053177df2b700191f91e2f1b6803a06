@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+	function dataCheck()
+	{
+		if($.trim($(#item_price).val()) =="")
+		{
+			alert("상품의 가격을 입력하세요.");
+			$(#item_price).val("").focus();
+			return false; //server data 전송 차단
+		}
+		if($.trim($(#item_des).val()) =="")
+		{
+			alert("상품의 가격을 입력하세요.");
+			$(#item_price).val("").focus();
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+	<h2>상품  삽입 폼</h2>
+	<form method="post" onsubmit="return dataCheck()">
+		상품 아이디 : <input id = "item_id" name = "item_id" value = "6"><br>
+ 		상품명 : <input id = "item_name" name = "item_name" value="스타일러" ><br>
+		상품 가격 : <input id = "item_price" name = "item_price"><br>
+		상품 설명 : <input id = "item_des" name = "item_des"><br>
+		상품 이미지 : <input id = "item_pic" name = "item_pic" value="img06.jpg"><br>
+		<input type ="submit" value = "삽입"/>
+		<input type ="reset" value = "취소"/>
+	</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+package com.example.anno.step03_component;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MemberController
+{
+	@Autowired
+	private MemberVO memberVO; 
+	
+	@RequestMapping(value="/component.do")
+	public void a()
+	{
+		
+	}
+	
+}

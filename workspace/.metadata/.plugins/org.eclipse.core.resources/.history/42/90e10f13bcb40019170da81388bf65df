@@ -1,0 +1,14 @@
+package example;
+
+public class PrintUse
+{
+	/* 사용 클래스 : PrintUse
+	 * 인터페이스 : Print
+	 * 구현 클래스 : ConsolePrint, PrintPrint
+	 */
+	public static void main(String[] args)
+	{
+		ConsolePrint cp = new ConsolePrint();
+		cp.printer();
+	}
+}

@@ -1,0 +1,32 @@
+package com.example.jdbc.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.jdbc.service.GoodsItemService;
+import com.example.jdbc.vo.GoodsItemVO;
+
+@Controller
+public class GoodsItemController
+{
+	@Autowired
+	private GoodsItemService goodsItemService; 
+	
+	@RequestMapping(value="/")
+	public String index()
+	{
+		return "index";
+	}
+	
+	@RequestMapping(value="/main.do")
+	public String main()
+	{
+		//table 전체 목록 select -> 응답 페이지
+		List<GoodsItemVO> list = goodsItemService.getItemList();
+		return "jsp/main";
+	}
+	
+}

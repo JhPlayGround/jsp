@@ -1,0 +1,17 @@
+package com.example.jdbc.model;
+
+import java.util.List;
+
+import com.example.jdbc.vo.GoodsItemVO;
+
+public class GoodsItemDaoImpl implements GoodsItemDao
+{
+
+	@Override
+	public List<GoodsItemVO> findaLL()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

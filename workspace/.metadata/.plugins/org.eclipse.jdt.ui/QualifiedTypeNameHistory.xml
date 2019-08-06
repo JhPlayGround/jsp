@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.EnableAutoConfiguration"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+<fullyQualifiedTypeName name="com.example.demo.sample01.MessageEn"/>
+<fullyQualifiedTypeName name="com.example.demo.sample01.MessageKr"/>
+<fullyQualifiedTypeName name="com.example.demo.sample02.Message"/>
+<fullyQualifiedTypeName name="com.example.demo.sample02.MessageEn"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.Resource"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.FileSystemResource"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="example.Print"/>
+<fullyQualifiedTypeName name="example.ConsolePrint"/>
+<fullyQualifiedTypeName name="example.PrinterPrint"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.env.IModule.IService"/>
+<fullyQualifiedTypeName name="com.example.anno.step02_autowired.UserVO"/>
+<fullyQualifiedTypeName name="com.example.anno.step03_component.MemberService"/>
+<fullyQualifiedTypeName name="com.example.anno.step03_component.MemberDao"/>
+<fullyQualifiedTypeName name="com.example.anno.step03_component.MemberVO"/>
+<fullyQualifiedTypeName name="com.example.anno.example.TestService"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="com.example.anno.example.TestDao"/>
+<fullyQualifiedTypeName name="com.example.anno.example.TestVO"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="sample02.MessageEn"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="com.example.jdbc.model.GoodsItemDao"/>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.integration.IntegrationProperties.Jdbc"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.example.jdbc.service.GoodsItemService"/>
+<fullyQualifiedTypeName name="com.example.jdbc.vo.GoodsItemVO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.example.jdbc.model.GoodsItemDaoImpl"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,15 @@
+package com.example.jdbc.service;
+
+import java.util.List;
+
+import com.example.jdbc.vo.GoodsItemVO;
+
+public class GoodsItemImpl implements GoodsItemService {
+
+	@Override
+	public List<GoodsItemVO> getItemList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

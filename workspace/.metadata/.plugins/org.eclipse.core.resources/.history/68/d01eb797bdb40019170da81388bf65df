@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <!-- beanFactory.xml : 객체 생성 공장: Bean Factory -->
+   
+   <!-- <bean> 태그 : bean(Spring 객체)를 생성하는 태그 -->
+   <bean id="message1" class="sample03.MessageKr"/>
+   
+   <bean id="message2" class="sample03.MessageEn"/>
+   
+   <!--  PrintUse에서 사용할 bean -->
+   <bean id ="print1" class="example.ConsolePrint"/>
+</beans>

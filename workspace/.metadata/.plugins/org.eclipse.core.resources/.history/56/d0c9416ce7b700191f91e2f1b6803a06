@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="/resource/css/content.css">
+</head>
+<body>
+	<div align="center">
+		<h2 id="title">상품 상세 화면</h2>
+		<table>
+			<tr>
+				<td><img src="/resource/img/img0${row.item_id}.jpg" width="100"/></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
+
+<!-- 
+<p> 선택된 item_id : ${row.item_id}</p>
+		<p> 선택된 상품명 : ${row.item_name}</p>
+		<p> 상품이미지 : </p>
+		
+		<p>상품 상세 설명 : ${row.item_des}</p>
+		<a href = "<%=request.getContextPath() %>/main.do">
+			<input type="button" value="목록이동" class="btn">
+		</a>
+-->

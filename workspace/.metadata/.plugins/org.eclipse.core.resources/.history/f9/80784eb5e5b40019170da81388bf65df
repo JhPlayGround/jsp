@@ -1,0 +1,10 @@
+package com.example.anno.step03_component;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MemberVO
+{
+	private String id = "hong";
+	private String pwd = "1234";
+}

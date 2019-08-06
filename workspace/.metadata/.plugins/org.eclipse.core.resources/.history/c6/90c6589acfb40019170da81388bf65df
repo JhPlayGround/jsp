@@ -1,0 +1,14 @@
+package com.example.anno.step02_autowired;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class UserController
+{
+	@RequestMapping("/autowired.do") //요청 url
+	public String login(Model model)
+	{
+		
+	}
+}

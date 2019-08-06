@@ -1,0 +1,9 @@
+package com.example.jdbc.model;
+
+public interface GoodsItemDao
+{
+	//전체 레코드 검색
+	findaLL();
+	
+	//
+}

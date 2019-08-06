@@ -1,0 +1,8 @@
+작업 순서
+
+1. project 생성
+2. pom.xml : library 추가
+3. database table 생성 : goodsItem
+4. VO(= DTO) class 생성
+5. Contoroller class 생성 :  "/" - > index.jsp
+6. application.properties 설정

@@ -1,0 +1,12 @@
+package com.example.anno.step02_autowired;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class UserVO //DT0 =Value Object
+{
+	//id, pwd, name
+	private String id = "hong";
+	private String pwd = "123";
+	private String name = "홍길동";
+}

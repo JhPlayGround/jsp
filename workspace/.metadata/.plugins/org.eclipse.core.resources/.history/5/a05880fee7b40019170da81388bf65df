@@ -1,0 +1,12 @@
+package com.example.anno.step03_component;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class MemberDao
+{
+	public String login(MemberVO vo)
+	{
+		return "A";
+	}
+}

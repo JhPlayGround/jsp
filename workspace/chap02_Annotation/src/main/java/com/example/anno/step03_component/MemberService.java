@@ -1,0 +1,19 @@
+package com.example.anno.step03_component;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class MemberService
+{
+	@Autowired
+	MemberDao memberDao;
+	
+	public String login(MemberVO vo)
+	{
+		System.out.println("MemberService");
+		String id_pwd = this.memberDao.login(vo);
+		
+		return id_pwd;
+	}
+}

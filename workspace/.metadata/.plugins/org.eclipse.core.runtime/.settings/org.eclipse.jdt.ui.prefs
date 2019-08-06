@@ -1,0 +1,13 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.example.demo.sample01.MessageEn"><rhs name\="com.example.demo.sample01.MessageEn"/></lhs><lhs name\="com.example.demo.sample01.MessageKr"><rhs name\="com.example.demo.sample01.MessageKr"/></lhs><lhs name\="com.example.demo.sample02.Message"><rhs name\="com.example.demo.sample02.MessageEn"/></lhs><lhs name\="org.springframework.core.io.InputStreamSource"><rhs name\="org.springframework.core.io.FileSystemResource"/></lhs><lhs name\="org.springframework.core.io.Resource"><rhs name\="org.springframework.core.io.FileSystemResource"/></lhs><lhs name\="example.Print"><rhs name\="example.ConsolePrint"/><rhs name\="example.PrinterPrint"/></lhs><lhs name\="example.ConsolePrint"><rhs name\="example.ConsolePrint"/></lhs><lhs name\="example.PrinterPrint"><rhs name\="example.PrinterPrint"/></lhs><lhs name\="org.springframework.web.servlet.ModelAndView"><rhs name\="org.springframework.web.servlet.ModelAndView"/></lhs><lhs name\="java.lang.Enum"><rhs name\="org.springframework.web.bind.annotation.RequestMethod"/></lhs><lhs name\="sample02.Message"><rhs name\="sample02.MessageEn"/></lhs><lhs name\="com.example.jdbc.vo.GoodsItemVO"><rhs name\="com.example.jdbc.vo.GoodsItemVO"/></lhs></history>
+content_assist_number_of_computers=15
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=16
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

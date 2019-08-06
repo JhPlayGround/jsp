@@ -1,0 +1,14 @@
+package com.example.jdbc.service;
+
+import java.util.List;
+
+import com.example.jdbc.vo.GoodsItemVO;
+
+public interface GoodsItemService
+{
+	List<GoodsItemVO> getItemList();
+	
+	GoodsItemVO getItem(int item_id);
+	
+	GoodsItemVO insertItem();
+}

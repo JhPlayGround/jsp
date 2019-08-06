@@ -1,0 +1,11 @@
+package com.example.jdbc.model;
+
+import java.util.List;
+
+import com.example.jdbc.vo.GoodsItemVO;
+
+public interface GoodsItemDao
+{
+	//전체 레코드 검색
+	public List<GoodsItemVO> findaLL();
+}

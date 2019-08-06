@@ -1,0 +1,37 @@
+package com.example.anno.example;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class TestDao
+{
+	public String login(TestVO vo)
+	{
+		String result;
+		if(vo.getId().equals("hong") && vo.getPwd().equals("1234"))
+		{
+			result = vo.getName() +", " + vo.getAddress();
+			return result;
+		}
+		else
+		{
+			result = "login fail";
+			return result;
+		}
+	}
+	
+	public String login_ver2(TestVO vo)
+	{
+		String[] result = new String[2];
+		if(vo.getId().equals("hong") && vo.getPwd().equals("1234"))
+		{
+			result[0] = vo.getName();
+			return result;
+		}
+		else
+		{
+			result = "login fail";
+			return result;
+		}
+	}
+}

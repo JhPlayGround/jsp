@@ -1,0 +1,19 @@
+package example;
+
+import org.springframework.beans.factory.BeanFactory;
+
+public class PrintUse
+{
+	/* 사용 클래스 : PrintUse
+	 * 인터페이스 : Print
+	 * 구현 클래스 : ConsolePrint, PrintPrint
+	 */
+	public static void main(String[] args)
+	{
+		Print p = new ConsolePrint();
+		p.printer();
+		
+		Print p2 = new PrinterPrint();
+		p2.printer();
+	}
+}

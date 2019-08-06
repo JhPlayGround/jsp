@@ -1,0 +1,17 @@
+package com.example.anno.step04_requestParam;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ParamController
+{
+	//전송 방식 : get - url에 parameter 노출
+	//전송 방식 : post - url에 parameter 보안
+	
+	@RequestMapping(value="receive.do")
+	public String form()
+	{
+		
+	}
+}

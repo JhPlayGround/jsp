@@ -1,0 +1,8 @@
+package com.example.anno.step03_component;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MemberController {
+
+}

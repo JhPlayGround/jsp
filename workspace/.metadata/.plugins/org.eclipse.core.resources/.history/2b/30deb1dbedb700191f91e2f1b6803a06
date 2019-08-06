@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function dataCheck()
+	{
+		}
+</script>
+</head>
+<body>
+	<h2>상품  삽입 폼</h2>
+	<form method="post" onsubmit="return dataCheck()">
+		상품 아이디 : <input id = "item_id" name = "item_id" value = "6"><br>
+ 		상품명 : <input id = "item_name" naem = "item_name" value="스타일러" ><br>
+		상품 가격 : <input id = "item_price" name = "item_price"><br>
+		상품 설명 : <input id = "item_des" name = "item_des"><br>
+		상품 이미지 : <input id = "item_pic" name = "item_pic" value="img06.jpg"><br>
+		<input type ="submit" value = "삽입"/>
+		<input type ="reset" value = "취소"/>
+	</form>
+</body>
+</html>

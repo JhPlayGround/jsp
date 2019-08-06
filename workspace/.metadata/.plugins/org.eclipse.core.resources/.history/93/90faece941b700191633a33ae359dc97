@@ -1,0 +1,45 @@
+package com.example.jdbc.model;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.integration.IntegrationProperties.Jdbc;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+
+import com.example.jdbc.vo.GoodsItemVO;
+
+public class GoodsItemDaoImpl implements GoodsItemDao
+{
+	@Autowired
+	private JdbcTemplate jdbcTemplate;
+
+	@Override
+	public List<GoodsItemVO> findaLL()
+	{
+		String sql = "select * from goodsItem order by item_id desc";
+		
+		
+		return jdbcTemplate.query(sql, new RowMapper<GoodsItemVO>()
+		{
+			//query(sql, rowMapper) : call back method (메소드가 다른 메소드를 호출)
+			
+			@Override
+			public GoodsItemVO mapRow(ResultSet rs, int rowNum) throws SQLException
+			{
+				//rs : 1row를 적재
+				//rowNum : 레코드의 번호를 저장
+				// TODO Auto-generated method stub
+				GoodsItemVO vo = new GoodsItemVO();
+				vo.setItem_id(rs.getInt("item_id"));
+				vo.setItem_name(rs.getString("item_name"));
+				vo.setItem_price(rs.getInt("item_price"));
+				vo.setItem_des(rs.getString("item_des"));
+				vo.setItem_pic(rs.getString("item_pic"));
+				return null;
+			} //mapRow end
+		}); //querty end
+	}
+}

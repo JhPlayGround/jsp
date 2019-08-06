@@ -1,0 +1,23 @@
+package com.example.jdbc.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.jdbc.model.GoodsItemDaoImpl;
+import com.example.jdbc.vo.GoodsItemVO;
+
+@Service
+public class GoodsItemImpl implements GoodsItemService
+{
+	@Autowired
+	private GoodsItemDao goodsItemDao 
+	@Override
+	public List<GoodsItemVO> getItemList()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

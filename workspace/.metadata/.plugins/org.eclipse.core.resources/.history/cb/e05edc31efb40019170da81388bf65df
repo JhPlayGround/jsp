@@ -1,0 +1,12 @@
+package com.example.anno.example;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class TestDao
+{
+	public String login(TestVO vo)
+	{
+		
+	}
+}

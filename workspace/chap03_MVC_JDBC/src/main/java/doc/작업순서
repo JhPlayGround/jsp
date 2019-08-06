@@ -1,0 +1,15 @@
+작업 순서
+
+1. project 생성
+2. pom.xml : library 추가
+3. database table 생성 : goodsItem
+4. VO(= DTO) class 생성
+5. Contoroller class 생성 :  "/" - > index.jsp
+6. application.properties 설정
+	-db 연동 setting : Hikari 커넥션 풀 설정
+	- view page setting : 경로 및 확장자
+7. configuration 작성
+8. Controller class 추가 작성
+	-@requestMapping
+	-service class 생성
+	-model calss 생성

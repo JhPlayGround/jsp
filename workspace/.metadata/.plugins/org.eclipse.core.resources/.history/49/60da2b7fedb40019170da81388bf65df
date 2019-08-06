@@ -1,0 +1,11 @@
+package com.example.anno.example;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class TestVO
+{
+	private String id = "hong";
+	private String pwd = "1234";
+	private String name = "홍길동";
+}

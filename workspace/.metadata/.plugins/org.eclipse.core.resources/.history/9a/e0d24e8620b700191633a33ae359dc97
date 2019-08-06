@@ -1,0 +1,5 @@
+-- goodsItem.sql
+
+create table goodsItem
+(
+);
