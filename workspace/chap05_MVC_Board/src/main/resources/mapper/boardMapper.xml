@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.board.vo.BoardVO">
+    <!-- table 속성와 bean 속성과의 매핑 -->
+	<resultMap id="BoardMap" type="com.example.board.vo.BoardVO">
+		<result property="bno" column="bno" />
+		<result property="subject" column="subject" />
+		<result property="content" column="content" />
+		<result property="writer" column="writer" />
+		<result property="reg_date" column="reg_date" />
+	</resultMap>
+	
+	<select id="boardCount" resultType="int">
+		select count(*) from board;
+	</select>
+	
+	<select id="boardList" resultMap="BoardMap">
+		select * from board;
+	</select>
+	
+	<select id="boardDetail" parameterType="int" resultType="com.example.board.vo.BoardVO">
+		select * from board where bno = #{bno}
+	</select>
+	
+	<insert id="boardInsert" parameterType="com.example.board.vo.BoardVO" useGeneratedKeys="true" keyProperty="bno">
+        insert into board (bno, subject,content,writer,reg_date) values (#{bno},#{subject},#{content},#{writer},now()) 
+    </insert>    
+       
+    <update id="boardUpdate" parameterType="com.example.board.vo.BoardVO">
+        UPDATE BOARD SET <if test="subject != null"> SUBJECT = #{subject} </if>
+           				 <if test="subject != null and content != null"> , </if>
+           				 <if test="content != null"> CONTENT = #{content} </if> WHERE BNO = #{bno}
+    </update>
+
+	<delete id="boardDelete" parameterType="int">
+        DELETE FROM BOARD WHERE BNO = #{bno}
+    </delete>
+    
+    <insert id="fileInsert" parameterType="com.example.board.vo.FileVO" useGeneratedKeys="true" keyProperty="fno">
+        insert into uploadFile (fno, bno, filename, fileOriginName ,fileurl) values (#{fno},#{bno},#{filename},#{fileOriginName}, #{fileurl}) 
+    </insert>  
+    
+    <select id="fileDetail" parameterType="int" resultType="com.example.board.vo.FileVO">
+		select * from uploadFile where bno = #{bno}
+	</select>
+</mapper>
